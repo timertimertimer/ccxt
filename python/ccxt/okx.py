@@ -1866,6 +1866,10 @@ class okx(Exchange, ImplicitAPI):
                             'min': self.safe_number(chain, 'minWd'),
                             'max': self.safe_number(chain, 'maxWd'),
                         },
+                        'deposit': {
+                            'min': self.safe_number(chain, 'minDep'),
+                            'min': self.safe_number(chain, 'maxDep'),
+                        }
                     },
                     'info': chain,
                 }
